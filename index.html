@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oumar Kebe's Portfolio clone | by CHIKA</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- ======================ICONS FROM https://fontawesome.com/ ===================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- ====================JAVASCRIPT================= -->
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <aside class="themed__section">
+      <div class="logo">
+        <a href="#accueil">Kebe</a>
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav__list">
+          <li class="nav__item active">
+            <a href="#accueil" class="nav__link">
+              <i class="fa-solid fa-house"></i> Accueil
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#apropos" class="nav__link">
+              <i class="fa-solid fa-user"></i> À propos
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#programme" class="nav__link">
+              <i class="fa-solid fa-list"></i> Programme
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#affiche" class="nav__link">
+              <i class="fa-solid fa-briefcase"></i> Affiche
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="fa-solid fa-comments"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="themed__section">
+      <div class="action__btns">
+        <button id="toggle_color_accent">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <button id="toggle_color_theme">
+          <i class="fa-solid fa-moon" id="theme_icon"></i>
+        </button>
+      </div>
+
+      <section class="accueil" id="accueil">
+        <div class="narrow">
+          <h2 class="title">Hello, je suis <span id="name"></span> <br /></h2>
+          <h2 class="title">
+            Candidat à la Présidence de l'<span id="amea">AMEA</span>
+          </h2>
+          <p>
+            Oumar Kebe, se démarque en tant qu'étudiant en L2GL à l'Institut
+            Supérieur d'Informatique (ISI). Durant son parcours scolaire, il a
+            brillé en dirigeant le gouvernement du CEM de Mbolo Birane, puis en
+            devenant le président du gouvernement scolaire du Lycée de Galoya
+            pendant deux ans, laissant une empreinte indélébile. Après avoir
+            brillamment décroché son Baccalauréat, il a immédiatement rejoint
+            les rangs de l'ISI. En dehors des cours, Oumar se distingue en tant
+            que plus jeune responsable du mouvement politique prometteur,
+            Pellital. Grâce à ses connaissances et ses relations dans le monde
+            du bénévolat, il parvient à mobiliser des fonds pour le bien-être
+            des plus vulnérables. Aujourd'hui, Oumar considère que c'est le
+            moment propice pour un renouveau à l'ISI, visant à améliorer la vie
+            étudiante. Son parcours exceptionnel et son engagement vibrant font
+            de lui une figure inspirante pour l'avenir de son institution.
+            Contactez moi
+          </p>
+
+          <button class="primary__btn">Contacter moi</button>
+        </div>
+        <div class="image__wrapper">
+          <img src="assets/images/moi.jpg" alt="me" />
+        </div>
+      </section>
+
+      <section class="apropos" id="apropos">
+        <h1 class="section__title">À propos de moi</h1>
+        <h2>Je suis <span>Oumar Kebe</span></h2>
+
+        <div class="row__wraper">
+          <form action="" class="form">
+            <div class="input__group">
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                name="email"
+                value="oumarkebepro@gmail.com"
+                readonly
+              />
+            </div>
+            <div class="input__group">
+              <label for="tel">Tel: </label>
+              <input type="tel" name="tel" value="+221 77 524 19 84" readonly />
+            </div>
+            <div class="input__group">
+              <label for="address">Addresse: </label>
+              <input
+                type="text"
+                name="address"
+                value="Avenue Cheikh Anta Diop"
+                readonly
+              />
+            </div>
+            <div class="input__group">
+              <label for="class">Classe: </label>
+              <input type="text" name="text" value="L2 GL" readonly />
+            </div>
+            <button class="primary__btn">Contacter moi</button>
+          </form>
+
+          <ul class="skills">
+            <li>
+              <span>Persuasion</span>
+              <div class="progress__bar"></div>
+            </li>
+            <li>
+              <span>Confiance En Soi</span>
+              <div class="progress__bar"></div>
+            </li>
+            <li>
+              <span>Adaptabilité</span>
+              <div class="progress__bar"></div>
+            </li>
+            <li>
+              <span>Intégrité</span>
+              <div class="progress__bar"></div>
+            </li>
+            <li>
+              <span>Persévérance</span>
+              <div class="progress__bar"></div>
+            </li>
+            <li>
+              <span>Créativité</span>
+              <div class="progress__bar"></div>
+            </li>
+            <li>
+              <span>Leadership</span>
+              <div class="progress__bar"></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row__wraper">
+          <div class="info education">
+            <h2>Education</h2>
+            <div class="info__content--container">
+              <ul>
+                <li>
+                  <span><i class="fa-solid fa-calendar"></i>2021 - 2022</span>
+                  <h3>Baccalauréat en Science Experimentale</h3>
+                  <p>Lycée de Galoya.</p>
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-calendar"></i>2022 - 2023 </span>
+                  <h3>L1GL ISI</h3>
+                  <p>Responsable de la L1GL.</p>
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-calendar"></i>2023 - 2024 </span>
+                  <h3>L2GL ISI</h3>
+                  <p>Candidat à la Présidence de l'AMEA</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="info experience">
+            <h2>Expérience</h2>
+            <div class="info__content--container">
+              <ul>
+                <li>
+                  <span><i class="fa-solid fa-calendar"></i>2017 - 2019 </span>
+                  <h3>
+                    President du Gouvernement Scolaire du CEM de Mbolo Birane
+                  </h3>
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-calendar"></i>2019 - 2022</span>
+                  <h3>President du Gouvernement Scolaire du Lycée de Galoya</h3>
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-calendar"></i>2022 - 2023 </span>
+                  <h3>Responsable L1GL de l’ISI</h3>
+                </li>
+                <li>
+                  <span
+                    ><i class="fa-solid fa-calendar"></i>2019 - Aujourd'hui
+                  </span>
+                  <h3>Responsable Politique</h3>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="programme" id="programme">
+        <h1 class="section__title">Programmes</h1>
+        <div class="card__group">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <h4>Porte-voix et Défense des Étudiants</h4>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <h4>Partage, Solidarité, Complémentarité</h4>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-futbol"></i>
+            </div>
+            <h4>Sport, Culture, etc….</h4>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <h4>
+              Participation et Accompagnement dans les Compétitions Inter-Écoles
+            </h4>
+          </div>
+        </div>
+
+        <div class="programme_content">
+          <h1 class="p__title">
+            Thème 1 : Porte-voix et Défense des Étudiants :
+          </h1>
+          <p>
+            Introduisons notre premier thème axé sur le "Porte-voix et Défense
+            des Étudiants". Nous cherchons à instaurer une représentation
+            étudiante équilibrée et collaborative, renforcer la communication
+            avec l'administration, et créer des canaux d'expression diversifiés.
+          </p>
+          <h3 class="p_subtitle">Séances d’Intégration :</h3>
+          <p>
+            Établir un conseil équilibré avec des représentants de diverses
+            filières et niveaux académiques. Organiser des réunions régulières
+            pour discuter des préoccupations étudiantes en collaboration avec
+            l'administration.
+          </p>
+          <h3 class="p_subtitle">Boîte à Idées Virtuelle :</h3>
+          <p>
+            Créer une plateforme en ligne pour des suggestions anonymes et
+            encourager la participation active. Examiner régulièrement les idées
+            soumises et fournir des retours transparents.
+          </p>
+          <h3 class="p_subtitle">Campagnes de Sensibilisation :</h3>
+          <p>
+            Organiser des séances d'information sur les droits étudiants et
+            lancer des campagnes sur la sécurité et les ressources disponibles.
+            Utiliser des supports visuels pour rendre l'information facilement
+            accessible.
+          </p>
+          <h3 class="p_subtitle">Assemblées Générales Étudiantes :</h3>
+          <p>
+            Instaurer des assemblées régulières pour permettre aux étudiants de
+            s'exprimer librement sur les grandes décisions. Publier des comptes
+            rendus transparents pour maintenir une communication ouverte.
+          </p>
+          <h1 class="p__title">
+            Thème 2 : Partage, Solidarité, Complémentarité :
+          </h1>
+          <p>
+            Poursuivons avec notre deuxième thème qui met l'accent sur le
+            "Partage, Solidarité, Complémentarité". Nous envisageons la création
+            de liens inter-niveaux grâce à un programme de tutorat, des
+            partenariats avec des entités morales pour soutenir les étudiants,
+            et des séances d'intégration pour favoriser une communauté unie.
+          </p>
+          <h3 class="p_subtitle">
+            Programme de Tutorat et Parrainage Inter-Niveaux :
+          </h3>
+          <p>
+            Mettre en place un parrainage entre niveaux pour favoriser la
+            transmission des expériences. Encourager des sessions régulières de
+            tutorat entre les binômes.
+          </p>
+          <h3 class="p_subtitle">
+            Relations Frères et Sœurs avec les Personnes Morales :
+          </h3>
+          <p>
+            Associer des groupes d'étudiants à des entités morales pour les
+            accompagner dans leur parcours académique. Créer un système de
+            "frères et sœurs" entre niveaux pour contribuer au bon
+            fonctionnement de la vie étudiante.
+          </p>
+          <h1 class="p__title">Thème 3 :Sport, Culture, etc….</h1>
+          <h3 class="p_subtitle">Séances d’Intégration :</h3>
+          <p>
+            Organiser des séances spécifiques pour favoriser les interactions
+            entre niveaux. Promouvoir la création d'une communauté unie à
+            travers des activités et des événements festifs (interclasses,
+            sorties…).
+          </p>
+          <h1 class="p__title">
+            Thème 4 : Participation et Accompagnement dans les Compétitions
+            Inter-Écoles
+          </h1>
+          <p>
+            Explorons maintenant notre troisième thème axé sur "Participer et
+            Accompagner dans les Compétitions Inter-Écoles". Nous ambitionnons
+            de former des équipes compétitives, d'organiser des compétitions
+            internes stimulantes, de soutenir activement la participation à des
+            compétitions inter-écoles, et de promouvoir un esprit d'équipe
+            dynamique au sein de notre institut.
+          </p>
+          <h3 class="p_subtitle">Création d'Équipes Compétitives :</h3>
+          <p>
+            Former des équipes compétitives dans des domaines spécifiques avec
+            la participation active de tous les niveaux. Organiser des séances
+            de formation pour garantir la préparation des équipes.
+          </p>
+          <h3 class="p_subtitle">
+            Organisation de Hackathons et Compétitions Internes :
+          </h3>
+          <p>
+            Collaborer avec des experts pour offrir des sessions de formation
+            préparatoires aux compétitions. Établir un programme de mentorat
+            pour partager les expériences entre niveaux.
+          </p>
+          <h3 class="p_subtitle">Soutien à la Formation :</h3>
+          <p>
+            Collaborer avec des experts pour offrir des sessions de formation
+            préparatoires aux compétitions. Établir un programme de mentorat
+            pour partager les expériences entre niveaux.
+          </p>
+          <h3 class="p_subtitle">
+            Participation à des Compétitions Inter-Écoles :
+          </h3>
+          <p>
+            Encourager activement la participation à des compétitions
+            inter-écoles. Fournir un soutien logistique et financier pour
+            garantir la représentation de l'institut.
+          </p>
+          <h3 class="p_subtitle">Promotion de l'Esprit d’Équipe :</h3>
+          <p>
+            Organiser des événements sociaux pour renforcer l'esprit d'équipe.
+            Célébrer les réussites pour promouvoir la fierté et la cohésion.
+          </p>
+        </div>
+      </section>
+
+      <section class="affiche" id="affiche">
+        <h1 class="section__title">Affiches</h1>
+        <div class="images">
+          <img src="assets/images/3.jpg" alt="" />
+          <div class="column">
+            <img src="assets/images/1.jpg" alt="" />
+            <img src="assets/images/moi.jpg" alt="" />
+          </div>
+          <img src="assets/images/2.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h1 class="section__title">Contactez moi</h1>
+        <h2 class="title">
+          <span>Avez vous des questions ?</span><br />Notre équipe est à votre
+          service
+        </h2>
+        <div class="info__contact--list">
+          <div class="info__contact">
+            <i class="fa-solid fa-phone"></i>
+            <span>Tel</span>
+            <a href="tel:+221 77 524 19 84" target="_blank"
+              >+221 77 524 19 84</a
+            >
+          </div>
+          <div class="info__contact">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Siège </span>
+            <a href="https://g.co/kgs/sa7Yx74" target="_blank">ISI MERE</a>
+          </div>
+          <div class="info__contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+            <a href="mailTo:oumarkebepro@gmail.com" target="_blank"
+              >oumarkebepro@gmail.com</a
+            >
+          </div>
+          <div class="info__contact">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Social Network</span>
+            <a
+              href="https://www.linkedin.com/in/oumar-kebe-94b1b028b/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </div>
+        </div>
+        <h2 class="title">
+          <span>Envoyez moi un mail</span><br />J'ai hâte de recevoir vos
+          messages
+        </h2>
+
+        <button class="primary__btn">Contactez moi</button>
+      </section>
+    </main>
+
+    <!-- ===================TYPEWRITER JS FROM https://www.npmjs.com/package/typewriter-effect ===================== -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </body>
+</html>
